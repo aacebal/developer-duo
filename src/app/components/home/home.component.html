@@ -1,0 +1,4 @@
+<app-nav-bar (emitProgressOne)="openProgressOne = !openProgressOne; openProgressTwo = false"></app-nav-bar>
+<app-side-bar (emitProgressTwo)="openProgressTwo = !openProgressTwo; openProgressOne = false"></app-side-bar>
+<app-horizontal-stepper *ngIf="openProgressOne"></app-horizontal-stepper>
+<app-vertical-stepper *ngIf="openProgressTwo"></app-vertical-stepper>
