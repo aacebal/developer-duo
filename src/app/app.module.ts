@@ -44,10 +44,11 @@ import {
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
-import { HorizontalStepperComponent } from './components/stepper/horizontal-stepper.component';
+import { HorizontalStepperComponent } from './components/horizontal-stepper/horizontal-stepper.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VerticalStepperComponent } from './components/vertical-stepper/vertical-stepper.component';
 import { DeveloperInfoComponent } from './components/developer-info/developer-info.component';
+import { ExperienceEducationComponent } from './components/experience-education/experience-education.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { DeveloperInfoComponent } from './components/developer-info/developer-in
     SideBarComponent,
     HorizontalStepperComponent,
     VerticalStepperComponent,
-    DeveloperInfoComponent
+    DeveloperInfoComponent,
+    ExperienceEducationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,35 @@
+<mat-horizontal-stepper #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <!-- <form [formGroup]="firstFormGroup"> -->
+    <ng-template matStepLabel>Info</ng-template>
+    <app-developer-info [info]="developerOneInfo"></app-developer-info>
+    <!-- <mat-form-field>
+        <input matInput placeholder="Last name, First name" [value]="'Acebal Suarez, Adel'" readonly>
+      </mat-form-field> -->
+    <div class="btn-container">
+      <button class="stepper-button" mat-button matStepperNext>Next</button>
+    </div>
+    <!-- </form> -->
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <!-- <form [formGroup]="secondFormGroup"> -->
+    <ng-template matStepLabel>Experience/Education</ng-template>
+    <app-experience-education></app-experience-education>
+    <!-- <mat-form-field>
+        <input matInput placeholder="Address">
+      </mat-form-field> -->
+    <div class="btn-container">
+      <button class="stepper-button" mat-button matStepperPrevious>Back</button>
+      <button class="stepper-button" mat-button matStepperNext>Next</button>
+    </div>
+    <!-- </form> -->
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div class="btn-container">
+      <button class="stepper-button" mat-button matStepperPrevious>Back</button>
+      <button class="stepper-button" mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
