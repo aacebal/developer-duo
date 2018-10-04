@@ -1,14 +1,25 @@
 .mat-form-field {
     padding: 0 15px;
-    // width: 10em;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+    display: flex;
+    .material-icons {
+        padding-right: 10px;
+    }
+    .img-icon {
+        width: 24px;
+        height: 20px;
+        padding-right: 10px;
+    }
 }
 
 .col-sm {
-    width: 180px;
+    width: 200px;
 }
 .col-md {
-    width: 220px;
+    width: 260px;
 }
 .col-lg {
-    width: 350px;
+    width: 360px;
 }

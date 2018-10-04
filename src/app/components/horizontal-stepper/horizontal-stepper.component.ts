@@ -11,6 +11,7 @@ export class HorizontalStepperComponent implements OnInit {
   secondFormGroup: FormGroup;
   developerOneInfo = {
     name: 'Acebal Suarez, Adel',
+    title: 'Application Developer/Web Development Teaching Assistant', 
     address: '424 E 36th St, Apt 535, Charlotte, NC, 28205',
     linkedIn: 'https://www.linkedin.com/in/adelacebal/',
     github: 'https://github.com/aacebal',
